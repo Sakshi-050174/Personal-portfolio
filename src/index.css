@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #020617;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
