@@ -1,6 +1,6 @@
 import { Mail } from 'lucide-react'
 
-const LinkedinIcon = (props) =>{
+const LinkedinIcon = (props:object) =>{
     return (
         <svg 
         role="img" 

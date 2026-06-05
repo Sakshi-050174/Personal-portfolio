@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
 export default function Hero() {
-    const handleScrollToId = (id) => {
+    const handleScrollToId = (id:string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
