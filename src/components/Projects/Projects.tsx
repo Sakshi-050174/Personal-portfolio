@@ -1,34 +1,70 @@
-import { projects } from "../../data/portfolio"
+import type { ReactElement } from "react";
+import { projects } from "../../data/portfolio";
 
-export default function Projects() {
+export default function Projects(): ReactElement {
   return (
-    <section id="projects" className="mt-10 bg-slate-900 px-6 py-24">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="text-4xl font-bold text-cyan-400">
-          Projects
-        </h2>
+    <section
+      id="projects"
+      className="bg-slate-900 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+            Projects
+          </p>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+            Featured Work
+          </h2>
+        </div>
+
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <div
+            <article
               key={project.title}
-              className="rounded-2xl border border-white/10 bg-slate-950 p-6"
+              className="
+                rounded-3xl
+                border
+                border-white/10
+                bg-slate-950/70
+                p-6
+                backdrop-blur-xl
+                transition-all
+                hover:-translate-y-1
+                hover:border-cyan-500/40
+              "
             >
-              <h3 className="text-2xl font-semibold">
+              <h3 className="text-xl font-semibold text-white">
                 {project.title}
               </h3>
 
-              <p className="mt-3 text-cyan-400">
-                {project.tech}
-              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {project.tech.split(",").map((tech) => (
+                  <span
+                    key={tech}
+                    className="
+                      rounded-full
+                      border
+                      border-cyan-500/20
+                      bg-cyan-500/10
+                      px-3
+                      py-1
+                      text-xs
+                      text-cyan-300
+                    "
+                  >
+                    {tech.trim()}
+                  </span>
+                ))}
+              </div>
 
-              <p className="mt-4 text-slate-400">
+              <p className="mt-5 leading-7 text-slate-400">
                 {project.description}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

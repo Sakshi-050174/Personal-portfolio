@@ -1,15 +1,55 @@
-export const skills = [
-  'ReactJS',
-  'Angular',
-  'TypeScript',
-  'JavaScript',
-  'Micro Frontends',
-  'Tailwind CSS',
-  'Cypress',
-  'SCSS',
-  'HTML5',
-  'CSS3',
+import {
+  Layers3,
+  Palette,
+  Users,
+  Sparkles,
+} from "lucide-react";
+
+export const highlights = [
+  {
+    title: "Scalable Architecture",
+    description:
+      "Designing maintainable, performant, and enterprise-ready frontend systems.",
+    icon: Layers3,
+  },
+  {
+    title: "Design Systems",
+    description:
+      "Building reusable, accessible, and consistent UI foundations.",
+    icon: Palette,
+  },
+  {
+    title: "Technical Leadership",
+    description:
+      "Mentoring engineers and driving collaboration and engineering excellence.",
+    icon: Users,
+  },
+  {
+    title: "AI-Powered Products",
+    description:
+      "Creating intelligent digital experiences using modern AI capabilities.",
+    icon: Sparkles,
+  },
 ]
+
+export const skillGroups = [
+  {
+    title: "Frontend",
+    items: ["React", "Angular", "TypeScript", "Next.js", "Stencil"],
+  },
+  {
+    title: "Testing",
+    items: ["Jest", "Cypress", "Playwright"],
+  },
+  {
+    title: "Architecture",
+    items: ["Micro Frontends", "Design Systems", "Performance"],
+  },
+  {
+    title: "AI & Tools",
+    items: ["OpenAI", "Git", "CI/CD", "AWS"],
+  },
+];
 
 export const experiences = [
   {
@@ -63,13 +103,13 @@ export const projects = [
       'Healthcare transportation management platform with optimized UI workflows in TAAZAA.',
   },
   {
-    title: 'Contract Analytics End User Dashboard',
+    title: 'Contract Management End User Dashboard',
     tech: 'FusionCharts • SCSS • React Js • jQuery',
     description:
       'Interactive analytics and workflow visualizations for enterprise contracts in Sirion Labs.',
   },
   {
-    title: 'Contract Analytics Admin',
+    title: 'Contract Management Admin',
     tech: 'FusionCharts • GoJS • Angular 13 • Angular Material • SCSS',
     description:
       'Interactive analytics and workflow visualizations for enterprise contracts in Sirion Labs.',
