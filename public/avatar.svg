@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://w3.org" viewBox="0 0 512 512" width="512" height="512">
+    <style>
+        :root {
+            --fallback-cyan: oklch(78.9% 0.154 211.53);
+        }
+        
+        .avatar-bg { 
+            fill: var(--tw-shadow-color, 
+                color-mix(in oklab, 
+                    color-mix(in oklab, var(--color-cyan-500, var(--fallback-cyan)) 20%, transparent) var(--tw-shadow-alpha, 1), 
+                    transparent
+                )
+            );
+                box-shadow: 0 0 0 1px var(--tw-shadow-color, 
+                    color-mix(in oklab, 
+                        color-mix(in oklab, var(--color-cyan-500, var(--fallback-cyan)) 20%, transparent) var(--tw-shadow-alpha, 1), 
+                        transparent
+                    )
+            ); 
+        }
+        
+        .avatar-text { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            font-weight: bold; 
+            font-size: 210px; 
+            fill: #FFFFFF; 
+            text-anchor: middle; 
+            dominant-baseline: central; 
+        }
+    </style>
+    <circle cx="256" cy="256" r="256" class="avatar-bg" />
+    <text x="256" y="258" class="avatar-text">SG</text>
+</svg>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { ReactElement } from "react";
+import  myResume from "../../assets/Sakshi_Gupta_Lead_Frontend_Resume.pdf"
 
 export default function Hero(): ReactElement {
   const handleScrollToId = (id: string): void => {
@@ -87,8 +88,8 @@ export default function Hero(): ReactElement {
           </button>
 
           <a
-            href="Resume.pdf"
-            download="Resume.pdf"
+            href={myResume}
+            download="Sakshi_gupta_lead_frontend_resume.pdf"
           >
             <button
               className="
