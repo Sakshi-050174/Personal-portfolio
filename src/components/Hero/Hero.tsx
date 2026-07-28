@@ -62,7 +62,7 @@ export default function Hero(): ReactElement {
           "
         >
           I build enterprise-grade frontend applications, design
-          systems, and AI-powered products with React and TypeScript.
+          systems, and AI-powered products with React, Angular and TypeScript.
         </motion.p>
 
         <motion.div

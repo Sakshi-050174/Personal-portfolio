@@ -57,7 +57,7 @@ export const experiences = [
     role: 'Lead Software Engineer',
     period: 'Feb 2024 - Apr 2025',
     points: [
-      'Led frontend architecture using Angular and ReactJS',
+      'Led frontend architecture using Angular and StencilJS',
       'Built scalable micro-frontend architecture',
       'Mentored engineers and led Agile ceremonies',
     ],
@@ -67,7 +67,7 @@ export const experiences = [
     role: 'Senior Software Developer',
     period: 'Jul 2023 - Jan 2024',
     points: [
-      'Developed TOBI NEMT application',
+      'Developed TOBI NEMT application in Angular',
       'Implemented Cypress E2E testing',
       'Created reusable UI components',
     ],
@@ -92,7 +92,7 @@ export const projects = [
   },
   {
     title: 'Workforce Management Notification System',
-    tech: 'ReactJS • Angular • Micro Frontends',
+    tech: 'StencilJS • Angular • Micro Frontends',
     description:
       'Enterprise workforce management notification system with scalable frontend architecture in UKG.',
   },
