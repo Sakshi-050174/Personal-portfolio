@@ -42,6 +42,10 @@ export const skillGroups = [
     items: ["Jest", "Cypress", "Playwright"],
   },
   {
+    title: "Backend & Database",
+    items: ["Supabase (PostgreSQL)"],
+  },
+  {
     title: "Architecture",
     items: ["Micro Frontends", "Design Systems", "Performance"],
   },
@@ -83,35 +87,100 @@ export const experiences = [
   },
 ]
 
-export const projects = [
-    {
-    title: 'My Portfolio Website',
-    tech: 'ReactJS • Tailwind CSS',
+export const personalProjects = [
+  {
+    title: "Tic-Tac-AI",
+    tech: ["React", "TypeScript", "SCSS"],
+    status: "Completed",
+    image: "/projects/tic-tac-ai.png",
+    github: "tic-tac-ai",
+    demo: "https://tic-tac-ai-three.vercel.app/",
     description:
-      'Personal portfolio website showcasing projects, skills, and experience with modern design and responsive layout.',
+      "Classic Tic-Tac-Toe game powered by the Minimax AI algorithm with multiple difficulty levels and a polished UI.",
   },
   {
-    title: 'Workforce Management Notification System',
-    tech: 'StencilJS • Angular • Micro Frontends',
+    title: "ConverseX",
+    tech: ["React", "TypeScript", "SCSS", "Vite", "Supabase"],
+    status: "In Progress",
+    image: "/projects/conversex.png",
+    github: "conversex",
+    demo: "https://conversex-dusky.vercel.app/",
     description:
-      'Enterprise workforce management notification system with scalable frontend architecture in UKG.',
+      "AI-ready real-time chat application with authentication, responsive messaging UI, reusable components, and scalable architecture.",
   },
   {
-    title: 'TOBI NEMT Platform',
-    tech: 'Angular 13 • Cypress',
+    title: "TaskFlow",
+    tech: ["React", "TypeScript", "SCSS", "Vite"],
+    status: "In Progress",
+    image: "/projects/taskflow.png",
+    github: "taskflow",
+    demo: "https://taskflow-seven-snowy.vercel.app",
     description:
-      'Healthcare transportation management platform with optimized UI workflows in TAAZAA.',
+      "Modern task and project management application featuring dashboards, Kanban boards, task tracking, and team collaboration.",
+  },
+  // {
+  //   title: "Real Estate CRM",
+  //   tech: [
+  //     "React",
+  //     "TypeScript",
+  //     "SCSS",
+  //     "Vite"
+  //   ],
+  //   status: "In Progress",
+  //   image: "/projects/real-estate-crm.png",
+  //   github: "real-estate-crm",
+  //   demo: "https://real-estate-crm.vercel.app",
+  //   description:
+  //     "Modern real estate lead management platform designed for brokers and sales teams. Features lead tracking, pipeline management, customer insights, responsive dashboards, and an intuitive user experience.",
+  // },
+  {
+    title: "Aurelia Platform",
+    tech: [
+      "Angular 21",
+      "TypeScript",
+      "SCSS",
+      "Angular Signals",
+      "ECharts",
+    ],
+    status: "In Progress",
+    image: "/projects/aurelia-platform.png",
+    github: "aurelia-platform",
+    demo: "",
+    description:
+      "Enterprise operations platform built with Angular 21 showcasing scalable architecture, reusable UI components, dashboards, advanced data tables, and modern frontend engineering practices.",
+  },
+  
+
+
+];
+
+export const professionalProjects = [
+  {
+    company: "Ultimate Kronos Group",
+    title: "Workforce Management Notification System",
+    tech: ["StencilJS", "Angular", "Micro Frontends"],
+    description:
+      "Developed enterprise notification features using a scalable micro-frontend architecture and reusable design system components.",
   },
   {
-    title: 'Contract Management End User Dashboard',
-    tech: 'FusionCharts • SCSS • React Js • jQuery',
+    company: "TAAZAA Tech Pvt. Ltd.",
+    title: "TOBI NEMT Platform",
+    tech: ["Angular", "Cypress", "SCSS"],
     description:
-      'Interactive analytics and workflow visualizations for enterprise contracts in Sirion Labs.',
+      "Built healthcare transportation workflows, reusable UI components, and end-to-end test automation.",
   },
   {
-    title: 'Contract Management Admin',
-    tech: 'FusionCharts • GoJS • Angular 13 • Angular Material • SCSS',
+    company: "Sirion Labs Pvt. Ltd.",
+    title: "Contract Management Dashboard",
+    tech: ["React", "SCSS", "FusionCharts", "jQuery"],
     description:
-      'Interactive analytics and workflow visualizations for enterprise contracts in Sirion Labs.',
-  }
-]
+      "Developed analytics dashboards with interactive visualizations for enterprise contract lifecycle management.",
+  },
+  {
+    company: "Sirion Labs Pvt. Ltd.",
+    title: "Contract Management Admin",
+    tech: ["Angular", "Angular Material", "FusionCharts", "GoJS"],
+    description:
+      "Built administrative modules for contract management with workflow automation and enterprise analytics.",
+  },
+];
